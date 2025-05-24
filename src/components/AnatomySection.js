@@ -3,7 +3,11 @@ import HealthStatusCards from "./HealthStatusCards";
 function AnatomySection() {
   return (
     <>
+      {/* TODO: <h1>Dashboard</h1> */}
       <div className="anatomy-section">
+
+        {/* TODO: add human body diagram here */}
+
         <div className="anatomy-figure">
           <div className="human-body">
             <div className="body-part heart healthy" data-tooltip="Healthy Heart">
@@ -20,9 +24,10 @@ function AnatomySection() {
             </div>
           </div>
         </div>
-        <HealthStatusCards />
+        <div className="">
+          <HealthStatusCards />
+        </div>
       </div>
-
     </>
   )
 }
