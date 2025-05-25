@@ -29,7 +29,6 @@ function Sidebar() {
         <NavigationTile icon={BiSolidCalendar} text="Calendar" />
         <NavigationTile icon={BiAddToQueue} text="Appointments" />
         <NavigationTile icon={BiStats} text="Statistics" />
-        <NavigationTile icon={BiAddToQueue} text="Tests" />
       </ul>
 
       &nbsp;

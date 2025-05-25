@@ -1,4 +1,5 @@
 import { healthStatusCardData } from "../data";
+import { BiRightArrowAlt } from "react-icons/bi";
 
 function HealthStatusCard({ icon, bodyPartName, lastCheckDate, progressValue }) {
   return (
@@ -24,6 +25,8 @@ function HealthStatusCards() {
           lastCheckDate={data.lastCheckDate}
           progressValue={data.progressValue}
         />)}
+
+        <p style={{ marginInlineStart: "auto" }}>details <BiRightArrowAlt /></p>
       </div>
     </>
   )

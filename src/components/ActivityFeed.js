@@ -1,16 +1,26 @@
 function ActivityFeed() {
   return (
     <div className="activity-feed">
-      <h2>Activity</h2>
+      <div className="head">
+        <h2>Activity</h2>
+        <p>3 Appointment on this week</p>
+      </div>
       <div className="activity-stats">
         <div className="bar-chart">
-          <div className="bar" style={{ height: '60%' }}></div>
-          <div className="bar" style={{ height: '30%' }}></div>
-          <div className="bar" style={{ height: '45%' }}></div>
-          <div className="bar" style={{ height: '75%' }}></div>
-          <div className="bar" style={{ height: '50%' }}></div>
-          <div className="bar" style={{ height: '90%' }}></div>
-          <div className="bar" style={{ height: '25%' }}></div>
+          {[
+            { day: "Mon", height: "60%" },
+            { day: "Tues", height: "30%" },
+            { day: "Wed", height: "45%" },
+            { day: "Thurs", height: "75%" },
+            { day: "Fri", height: "50%" },
+            { day: "Sat", height: "90%" },
+            { day: "Sun", height: "25%" },
+          ].map(({ day, height }) => (
+            <div key={day} className="bar-wrapper">
+              <div className="bar" style={{ height }}></div>
+              <div className="bar-label">{day}</div>
+            </div>
+          ))}
         </div>
       </div>
     </div>
